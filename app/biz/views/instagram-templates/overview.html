@@ -1,0 +1,75 @@
+<div class="container-fluid">
+    <section id="widget-grid-instagram-overview" widget-grid>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div jarvis-widget data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Instagram Followers</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <h4>Jul 20, 2015 - Aug 18, 2015</h4>
+                                        <p><i class="fa fa-warning"></i> Tesla Motors is above average for Google+ Followers, ranking 10th of 25 companies in your landscape, Keep chasing the leader, BMW, with their 5,763,387 Followers</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <div highchart data="vm.data1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div jarvis-widget data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Activity & Engagement</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <h4>Jul 20, 2015 - Aug 18, 2015</h4>
+                                        <p><i class="fa fa-warning"></i> Tesla Motors was the landscape leader for Google+ interactions, ranking 25st of 25. Ferrari leads with 93,406 interactions.</p>
+                                        <p><i class="fa fa-flag"></i> Tesla Motors posted very little on Google+.</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4">
+                                        <div highchart data="vm.data2"></div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4">
+                                        <div highchart data="vm.data2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Social Audience</h4>
+            </div>
+            <div class="modal-body">
+                <div highchart data="vm.data3"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>

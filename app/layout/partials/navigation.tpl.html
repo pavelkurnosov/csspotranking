@@ -1,0 +1,141 @@
+<aside id="left-panel">
+
+    <!-- User info -->
+    <!--<div login-info></div>-->
+    <!-- end user info -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <img class="col-xs-12 img-responsive margin-top-10 margin-bottom-10" src="./styles/img/temp/6.jpg">
+        </div>
+    </div>
+
+    <nav>
+        <!-- NOTE: Notice the gaps after each icon usage <i></i>..
+        Please note that these links work a bit different than
+        traditional href="" links. See documentation for details.
+        -->
+        <ul data-smart-menu>
+            <li data-ui-sref-active="active">
+                <a data-ui-sref="app.biz.dashboard" title="Dashboard">
+                    <i class="fa fa-lg fa-fw fa-dashboard"></i> <span class="menu-item-parent">{{getWord('Dashboard')}}</span></a>
+            </li>
+            <li data-menu-collapse>
+                <a href="#" title="My Campaigns"><i class="fa fa-lg fa-fw fa-user"></i> <span
+                        class="menu-item-parent">{{getWord('Client Profile Creation')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.accountCreation">{{getWord('CS Account Creation')}}</a>
+                    </li>
+                </ul>
+            </li>
+            <li data-menu-collapse>
+                <a href="#" title="My Campaigns"><i class="fa fa-lg fa-fw fa-cogs"></i> <span
+                        class="menu-item-parent">{{getWord('My Campaigns')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.mainSearch">{{getWord('Main Search')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.rtvReport">{{getWord('RTV AD Airing Certificate')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.socialMedia">{{getWord('Social Media engagement')}}</a>
+                    </li>
+                </ul>
+            </li>
+            <li data-menu-collapse>
+                <a href="#" title="'My Insight"><i class="fa fa-lg fa-fw fa-globe"></i> <span
+                        class="menu-item-parent">{{getWord('My Insight')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.mediaOutlet">{{getWord('Media Outlet Listing')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.campaignBreakdown">{{getWord('Campaign Breakdown')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.GeographicalCoverage">{{getWord('Geographic Coverage')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.MeasuringOutput">{{getWord('Measuring Output 360º Over time trends')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.ComparingPerform">{{getWord('Comparing the performance across multiple campaigns')}}</a>
+                    </li>
+                </ul>
+            </li>
+            <li data-menu-collapse>
+                <a href="#" title="Organization Perform"><i class="fa fa-lg fa-fw fa-signal"></i> <span
+                        class="menu-item-parent">{{getWord('Organization Perform')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.BrandCompetition">{{getWord('Brand Size VS Competition')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.Opportunity">{{getWord('Opportunity to See')}}</a>
+                    </li>
+                </ul>
+            </li>
+            <li data-menu-collapse>
+                <a href="#" title="Social LANDSCAPE"><i class="fa fa-lg fa-fw fa-twitter"></i> <span
+                        class="menu-item-parent">{{getWord('Social LANDSCAPE')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.crossChannels"><i class="fa fa-lg fa-fw fa-twitter"></i> {{getWord('Cross Channels')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.socialFacebook"><i class="fa fa-lg fa-fw fa-facebook"></i> {{getWord('Facebook')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.socialTwitter"><i class="fa fa-lg fa-fw fa-twitter"></i> {{getWord('Twitter')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.socialYoutube"><i class="fa fa-lg fa-fw fa-youtube"></i> {{getWord('YouTube')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.socialGoogleplus"><i class="fa fa-lg fa-fw fa-google-plus"></i> {{getWord('Google+')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.socialInstagram"><i class="fa fa-lg fa-fw fa-instagram"></i> {{getWord('Instagram')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.socialLinkedin"><i class="fa fa-lg fa-fw fa-linkedin"></i> {{getWord('LinkedIn')}}</a>
+                    </li>
+                </ul>
+            </li>
+            <li data-menu-collapse>
+                <a href="#" title="OOH"><i class="fa fa-lg fa-fw fa-th"></i> <span
+                        class="menu-item-parent">{{getWord('OOH')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="#">{{getWord('OOH Search')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.mediaLibrary">{{getWord('OOH Media Library')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.inventoryMap">{{getWord('OOH Inventory Map')}}</a>
+                    </li>
+                </ul>
+            </li>
+            <!--<li data-menu-collapse>
+                <a href="#" title="Billing System"><i class="fa fa-lg fa-fw fa-th"></i> <span
+                        class="menu-item-parent">{{getWord('Billing System')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.customers">{{getWord('Customers')}}</a>
+                    </li>
+                </ul>
+            </li>-->
+        </ul>
+
+        <!-- NOTE: This allows you to pull menu items from server -->
+        <!-- <ul data-smart-menu-items="/api/menu-items.json"></ul> -->
+    </nav>
+
+    <span class="minifyme" data-action="minifyMenu" minify-menu>
+    <i class="fa fa-arrow-circle-left hit"></i>
+  </span>
+
+</aside>

@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <section id="widget-grid-facebook-overview" widget-grid>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div jarvis-widget data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Followers</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div highchart data="vm.data7"></div>
+                                        <button class="btn btn-primary margin-top-10" data-toggle="modal" data-target="#myModal">View All</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Top Content on Twitter during Jun 21 2015 for Eat24</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table table-responsive">
+                    <thead>
+                    <tr ng-repeat="r in [1,1,1] track by $index">
+                        <td>
+                            <img ng-src="./styles/img/temp/1.jpg">
+                        </td>
+                        <td>
+                            <h4>Munchery</h4>
+                            <p>Jun 15, 2015</p>
+                            <p>#MuncheryMonday means menu browsing! Options sure to make you hungry await. cred@asideofsweet</p>
+                        </td>
+                        <td>
+                            <img class="image-width-120" ng-src="./styles/img/superbox/superbox-thumb-17.jpg">
+                        </td>
+                        <td>
+                            <p>ENGAGEMENT RATE</p>
+                            <h3>3.40%</h3>
+                        </td>
+                        <td>
+                            <p>ENGAGEMENT TOTAL</p>
+                            <h3>355</h3>
+                        </td>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>

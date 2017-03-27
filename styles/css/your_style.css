@@ -1,0 +1,374 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the 
+ * later versions of this theme. 
+ * 
+ * We advise that you use use this CSS to override 
+ * SmartAdmin styles. 
+ * 
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ * 
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+
+.smart-style-5 #header {
+    background: black !important;
+}
+
+#logo img {
+    width: 190px;
+    margin-top: -10px;
+}
+
+#left-panel a {
+    cursor: pointer;
+}
+
+.text-black {
+    color: black;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-top-0 {
+    padding-top: 0;
+}
+
+.padding-left-0 {
+    padding-left: 0;
+}
+
+.padding-right-0 {
+    padding-right: 0;
+}
+
+.padding-bottom-0 {
+    padding-bottom: 0;
+}
+
+.padding-1 {
+    padding: 1px !important;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.padding-left-10 {
+    padding-left: 10px;
+}
+
+.padding-right-10 {
+    padding-right: 10px;
+}
+
+.padding-bottom-10 {
+    padding-bottom: 10px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+
+.padding-left-20 {
+    padding-left: 20px;
+}
+
+.padding-right-20 {
+    padding-right: 20px;
+}
+
+.padding-bottom-20 {
+    padding-bottom: 10px;
+}
+
+.padding-40 {
+    padding: 40px;
+}
+
+.padding-top-40 {
+    padding-top: 40px;
+}
+
+.padding-left-40 {
+    padding-left: 40px;
+}
+
+.padding-right-40 {
+    padding-right: 40px;
+}
+
+.padding-bottom-40 {
+    padding-bottom: 40px;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.margin-top-0 {
+    margin-top: 0;
+}
+
+.margin-left-0 {
+    margin-left: 0;
+}
+
+.margin-right-0 {
+    margin-right: 0;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.margin-5 {
+    margin: 5px;
+}
+
+.margin-top-5 {
+    margin-top: 5px;
+}
+
+.margin-left-5 {
+    margin-left: 5px;
+}
+
+.margin-right-5 {
+    margin-right: 5px;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5px;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.margin-right-10 {
+    margin-right: 10px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-20 {
+    margin: 20px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-left-20 {
+    margin-left: 20px;
+}
+
+.margin-right-20 {
+    margin-right: 20px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-40 {
+    margin: 40px;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.margin-left-40 {
+    margin-left: 40px;
+}
+
+.margin-right-40 {
+    margin-right: 40px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+.margin-right-80 {
+    margin-right: 80px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.table-xs > tbody > tr > td, .table-xs > tbody > tr > th, .table-xs > tfoot > tr > td, .table-xs > tfoot > tr > th, .table-xs > thead > tr > td, .table-xs > thead > tr > th {
+    padding: 2px !important;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+/*----------------------------------------------------------------------------*/
+.height-300px {
+    height: 300px !important;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0.3;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+}
+
+.back-to-top:active {
+    opacity: 1;
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 30px;
+    bottom: 30px;
+}
+
+.dt-buttons {
+    width: 100%;
+    text-align: right;
+}
+
+.dt-buttons .dt-button {
+    border-color: rgba(117, 205, 241, .83);
+    background: rgba(71, 188, 236, .83);
+    color: white;
+    webkit-text-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+    -moz-text-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+}
+
+.dt-buttons .dt-button:hover {
+    background: rgba(117, 205, 241, .83) !important;
+}
+
+div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-collection button.dt-button.active:not(.disabled), div.dt-button-collection div.dt-button:active:not(.disabled), div.dt-button-collection div.dt-button.active:not(.disabled), div.dt-button-collection a.dt-button:active:not(.disabled), div.dt-button-collection a.dt-button.active:not(.disabled) {
+    background: orange !important;
+}
+
+::-webkit-input-placeholder {
+    color: #868686;
+}
+
+.highcharts-menu hr {
+    border-color: darkgrey;
+    margin: 0;
+}
+
+.smart-style-5 .dropdown-menu {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/*----------------------------------------------------------------------------*/
+.title-in-table {
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#inventory-map-canvas {
+    height: 500px;
+}
+
+.fixed-main-search-summary {
+    position: fixed;
+    top: 10px;
+}
+
+.search-box {
+    width: 150px;
+}
+
+.tag-box {
+    width: 80px;
+}
+
+.date-range-box {
+    width: 200px;
+}
+
+.media-logo {
+    width: 30px;
+    margin-top: -10px;
+    margin-left: 5px;
+}
+
+.top-div {
+    border: 2px solid white;
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 10px;
+    /*width: 80%;*/
+    margin: auto;
+}
+
+.top-div span {
+    font-size: 34px;
+}
+
+.social-icon {
+    max-width: 40px;
+}
+
+
+.image-width-120 {
+    width: 120px;
+}

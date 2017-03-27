@@ -1,0 +1,46 @@
+[
+  {
+    "newspapers": "",
+    "country": "UAE",
+    "lang": "Arabic",
+    "ymd": "1/3/2017",
+    "circulation": "168000",
+    "np_subject": "Local&Intern",
+    "ads_no": "1",
+    "ad_np_section": "Front Page",
+    "ad_location": "Quarter Page"
+  },
+  {
+    "newspapers": "",
+    "country": "USA",
+    "lang": "English",
+    "ymd": "8/3/2017",
+    "circulation": "141000",
+    "np_subject": "Local&Intern",
+    "ads_no": "1",
+    "ad_np_section": "Front Page",
+    "ad_location": "Quarter Page"
+  },
+  {
+    "newspapers": "",
+    "country": "UAE",
+    "lang": "Arabic",
+    "ymd": "1/3/2017",
+    "circulation": "168000",
+    "np_subject": "Local&Intern",
+    "ads_no": "1",
+    "ad_np_section": "Front Page",
+    "ad_location": "Quarter Page"
+  },
+  {
+    "newspapers": "",
+    "country": "USA",
+    "lang": "English",
+    "ymd": "8/3/2017",
+    "circulation": "141000",
+    "np_subject": "Local&Intern",
+    "ads_no": "1",
+    "ad_np_section": "Front Page",
+    "ad_location": "Quarter Page"
+  }
+]
