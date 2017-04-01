@@ -49,6 +49,32 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.billingClients', {
+                url: '/billing_clients',
+                data: {
+                    title: 'Billing Clients'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/billing-clients.html',
+                        controller: 'BillingClientsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.billingDetails', {
+                url: '/billing_details',
+                data: {
+                    title: 'Billing Details'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/billing-details.html',
+                        controller: 'BillingDetailsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;
