@@ -23,6 +23,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.profileCreation', {
+                url: '/cs_profile_creation',
+                data: {
+                    title: 'CS Profile Creation'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/profile-creation.html',
+                        controller: 'ProfileCreationController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
             .state('app.biz.accountCreation', {
                 url: '/cs_account_creation',
                 data: {
