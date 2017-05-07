@@ -35,10 +35,10 @@
                             </div>
                             <div class="form-group">
                                 <label class="col-md-3 control-label"></label>
-                                <div class="col-md-9">
+                                <div class="col-md-5">
                                     <div class="btn-group dropdown" data-dropdown>
                                         <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                            Reseller <span class="caret"></span>
+                                            Reseller
                                         </button>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -53,8 +53,16 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="col-md-4 text-right">
+                                    <div class="smart-form">
+                                        <label class="toggle">
+                                            <input type="checkbox" name="checkbox-toggle" ng-click="vm.extentVisible = !vm.extentVisible">
+                                            <i data-swchon-text="ON" data-swchoff-text="OFF"></i>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" ng-if="vm.extentVisible">
                                 <label class="col-md-3 control-label">Reseller Name</label>
                                 <div class="col-md-9">
                                     <select class="form-control">
@@ -64,25 +72,25 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" ng-if="vm.extentVisible">
                                 <label class="col-md-3 control-label">Reseller ID</label>
                                 <div class="col-md-9">
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" ng-if="vm.extentVisible">
                                 <label class="col-md-3 control-label">Email</label>
                                 <div class="col-md-9">
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" ng-if="vm.extentVisible">
                                 <label class="col-md-3 control-label">Direct Contact</label>
                                 <div class="col-md-9">
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" ng-if="vm.extentVisible">
                                 <label class="col-md-3 control-label">Phone</label>
                                 <div class="col-md-9">
                                     <input type="text" class="form-control">
