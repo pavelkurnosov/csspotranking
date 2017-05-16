@@ -40,7 +40,8 @@
 
       "highcharts",
       "highcharts-exporting",
-      "highchartTable"
+      "highchartTable",
+      "ng-tags-input"
 
     ],
     "vendor.ui": [
@@ -169,6 +170,7 @@
     "smartwidgets": "smartadmin-plugin/smartwidgets/jarvis.widget.min.js",
     "notification": "smartadmin-plugin/notification/SmartNotification.min.js",
     "bootstrap-daterangepicker": "bower_components/bootstrap-daterangepicker/daterangepicker.js",
-    "ng-bs-daterangepicker": "bower_components/ng-bs-daterangepicker/dist/ng-bs-daterangepicker.min.js"
+    "ng-bs-daterangepicker": "bower_components/ng-bs-daterangepicker/dist/ng-bs-daterangepicker.min.js",
+    "ng-tags-input": "bower_components/ng-tags-input/ng-tags-input.min.js"
   }
 }

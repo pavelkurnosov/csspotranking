@@ -154,7 +154,100 @@
         </div>
     </div>
     <div class="row">
+        <div class="col-xs-6">
+            <div jarvis-widget data-widget-color="blueDark" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
+                    <h2>Client's Summary Service </h2>
+                </header>
+                <div class="container-fluid form-horizontal">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Client ID</label>
+                                <label class="col-md-9 control-label text-left">XXXXXXXXX</label>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Category</label>
+                                <div class="col-md-9">
+                                    <select class="form-control">
+                                        <option ng-repeat="item in [1,2,3]">Item {{$index + 1}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Sub-Category</label>
+                                <div class="col-md-9">
+                                    <select class="form-control">
+                                        <option ng-repeat="item in [1,2,3]">Item {{$index + 1}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Company Name</label>
+                                <div class="col-md-9">
+                                    <select class="form-control">
+                                        <option ng-repeat="item in [1,2,3]">Item {{$index + 1}}</option>
+                                    </select>
+                                </div>
+                            </div>
 
+                            <hr/>
+
+                            <div class="form-group" ng-repeat="competitor in vm.competitors">
+                                <label class="col-md-3 control-label">Competitor {{$index + 1}}</label>
+                                <div class="col-md-9">
+                                    <select class="form-control">
+                                        <option ng-repeat="item in [1,2,3]">Item</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label"></label>
+                                <div class="col col-md-9">
+                                    <button class="btn btn-primary" ng-click="vm.addCompetitor()">Add New Competitor</button>
+                                </div>
+                            </div>
+
+                            <hr/>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">TAG</label>
+                                <div class="col-md-9">
+                                    <tags-input class="bootstrap" ng-model="vm.tags" on-tag-added="vm.lastSearched = 'tag'" on-tag-removed="vm.lastSearched = 'tag'" style="width: 300px;"></tags-input>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Services</label>
+                                <div class="col-md-9">
+                                    <button class="btn btn-success">Create</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 text-center">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <button class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div jarvis-widget data-widget-color="blueDark" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
+                    <h2>Monitoring Input/Brand Contact </h2>
+                </header>
+                <div class="container-fluid form-horizontal">
+                    <div class="row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-xs-12">
             <div jarvis-widget data-widget-color="blueDark" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
@@ -255,13 +348,19 @@
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Contract Start date</label>
                                 <div class="col-md-8">
-                                    <input type="text" class="form-control">
+                                    <div class="input-group">
+                                        <input type="text" name="mydate" placeholder="Select a date" class="form-control datepicker" data-smart-datepicker options="datepickerOptions" data-date-format="dd/mm/yy">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Contract Expiry date</label>
                                 <div class="col-md-8">
-                                    <input type="text" class="form-control">
+                                    <div class="input-group">
+                                        <input type="text" name="mydate" placeholder="Select a date" class="form-control datepicker" data-smart-datepicker options="datepickerOptions" data-date-format="dd/mm/yy">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

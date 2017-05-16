@@ -60,6 +60,7 @@
     "angular-google-maps": "~2.3.1",
     "angular-datatables": "^0.5.3",
     "ng-bs-daterangepicker": "^0.0.6",
-    "chart.js": "^2.5.0"
+    "chart.js": "^2.5.0",
+    "ng-tags-input": "^3.2.0"
   }
 }

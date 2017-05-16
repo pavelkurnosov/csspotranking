@@ -39,6 +39,13 @@ angular.module('app.biz').controller('ProfileCreationController', function ($sco
         }]
     }];
 
+    vm.competitors = [1,2,3];
+    vm.addCompetitor = function () {
+        vm.competitors[vm.competitors.length] = vm.competitors.length + 1;
+    };
+
+    vm.tags = ['Tag1', 'Tag2'];
+
     vm.chk = {};
     vm.popupVisible = false;
     vm.showPopup = function (ind) {

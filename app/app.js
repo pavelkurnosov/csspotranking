@@ -40,6 +40,7 @@ angular.module('app', [
     'app.home',
     'app.biz',
     'ngBootstrap',
+    'ngTagsInput'
 ])
 .config(function ($provide, $httpProvider, RestangularProvider) {
 
