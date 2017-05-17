@@ -209,8 +209,6 @@
                                 </div>
                             </div>
 
-                            <hr/>
-
                             <div class="form-group">
                                 <label class="col-md-3 control-label">TAG</label>
                                 <div class="col-md-9">
@@ -220,7 +218,7 @@
                             <div class="form-group">
                                 <label class="col-md-3 control-label">Services</label>
                                 <div class="col-md-9">
-                                    <button class="btn btn-success">Create</button>
+                                    <button class="btn btn-success" ng-click="vm.createFlag = !vm.createFlag">Create...</button>
                                 </div>
                             </div>
                         </div>
@@ -235,14 +233,50 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-6" ng-if="vm.createFlag">
             <div jarvis-widget data-widget-color="blueDark" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
                     <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                    <h2>Monitoring Input/Brand Contact </h2>
+                    <h2>Monitoring Input / Brand Contact </h2>
                 </header>
-                <div class="container-fluid form-horizontal">
-                    <div class="row"></div>
+                <div class="container-fluid form-horizontal padding-bottom-10">
+                    <div class="row">
+                        <div class="col-xs-12" ng-repeat="item in vm.monitoringInputs">
+                            <h6>{{item.name}}</h6>
+                            <div ng-repeat="child in item.childs" class="padding-left-40">
+                                <p class="margin-0">
+                                    <label class="margin-0 width-full cursor-pointer">
+                                        {{child.name}}
+                                        <input type="checkbox" class="float-right">
+                                    </label>
+                                </p>
+                                <div ng-repeat="c in child.childs" class="padding-left-40">
+                                    <p class="margin-0">{{c.name}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div jarvis-widget data-widget-color="blueDark" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
+                    <h2>Measuring Output Insight </h2>
+                </header>
+                <div class="container-fluid form-horizontal padding-bottom-10">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <table class="width-full">
+                                <tr ng-repeat="item in vm.measuringOutputs">
+                                    <td class="text-bold">{{item.label}}</td>
+                                    <td>{{item.name}}</td>
+                                    <td>
+                                        <input type="checkbox" class="float-right">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
