@@ -55,15 +55,7 @@ angular.module('app.biz').controller('ProfileCreationController', function ($sco
                 {id: 1, name: "TV"},
                 {id: 1, name: "Broadcast Content Detection 24/7"},
                 {id: 1, name: "My social"},
-                {
-                    id: 1, name: "Out of Home",
-                    childs: [
-                        {id: 1, name: "Billboards"},
-                        {id: 1, name: "Street Furniture"},
-                        {id: 1, name: "Transit & Transportation"},
-                        {id: 1, name: "Arena & Stadium Advertising"}
-                    ]
-                }
+                {id: 1, name: "Out of Home"}
             ]
         }, {
             id: 2, name: "Digital Media",
@@ -95,10 +87,10 @@ angular.module('app.biz').controller('ProfileCreationController', function ($sco
     ];
 
     vm.measuringOutputs = [
-        { id: 1, label: "My campaign", name: "My Insight"},
-        { id: 1, label: "Organization Performance", name: "Brand vs Competitions"},
-        { id: 1, label: "Reporting Tools", name: ""},
-        { id: 1, label: "Alerting Service", name: ""}
+        {id: 1, label: "My campaign", name: "My Insight"},
+        {id: 1, label: "Organization Performance", name: "Brand vs Competitions"},
+        {id: 1, label: "Reporting Tools", name: ""},
+        {id: 1, label: "Alerting Service", name: ""}
     ];
 
     vm.chk = {};

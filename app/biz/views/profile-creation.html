@@ -237,9 +237,14 @@
             <div jarvis-widget data-widget-color="blueDark" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
                     <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                    <h2>Monitoring Input / Brand Contact </h2>
+                    <h2>Rate Card</h2>
                 </header>
                 <div class="container-fluid form-horizontal padding-bottom-10">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h4>Monitoring Input / Brand Contact</h4>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-xs-12" ng-repeat="item in vm.monitoringInputs">
                             <h6>{{item.name}}</h6>
@@ -256,14 +261,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div jarvis-widget data-widget-color="blueDark" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-                <header>
-                    <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                    <h2>Measuring Output Insight </h2>
-                </header>
-                <div class="container-fluid form-horizontal padding-bottom-10">
+                    <div class="row">
+                        <div class="col-xs-12 text-center padding-10">
+                            <h4>Measuring Output Insight</h4>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-xs-12">
                             <table class="width-full">
@@ -280,90 +282,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <div jarvis-widget data-widget-color="blueDark" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-                <header>
-                    <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                    <h2>Client Profile Creation </h2>
-                </header>
-                <div class="container-fluid form-horizontal">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label class="col-md-3 control-label">Client ID</label>
-                                <label class="col-md-9 control-label text-left">XXXXXXXXX</label>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-3 control-label">Client Industry</label>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-3 control-label">Active Service</label>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-3 control-label"></label>
-                                <div class="col col-md-9 smart-form">
-                                    <label class="checkbox padding-top-0" ng-repeat="media in vm.medias">
-                                        <input type="checkbox" name="checkbox" ng-click="vm.showPopup($index)" ng-model="vm.chk[$index]">
-                                        <i></i>{{media}}
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-3 control-label">TAG</label>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="form-group margin-bottom-40">
-                                <label class="col-md-3 control-label">Brand Name</label>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group margin-bottom-40">
-                                <label class="col-md-3 control-label"></label>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group margin-bottom-40">
-                                <label class="col-md-3 control-label">Sub Industry</label>
-                                <div class="col-md-9">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group margin-bottom-40">
-                                <label class="col-md-3 control-label">Competition List</label>
-                                <div class="col-md-9">
-                                    <select class="form-control custom-scroll" multiple rows="10">
-                                        <option ng-repeat="i in [1,1,1] track by $index">Competition {{$index + 1}}</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 text-center">
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    <button class="btn btn-primary">Save</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
     <div class="row">
         <div class="col-xs-12">
