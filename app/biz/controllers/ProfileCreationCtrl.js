@@ -81,6 +81,8 @@ angular.module('app.biz').controller('ProfileCreationController', function ($sco
                         {id: 1, name: "SEM Insight & Competitions"},
                         {id: 1, name: "Display Advertising"}
                     ]
+                }, {
+                    id: 3, name: "Digital Analytic / Mobile&Tablet"
                 }
             ]
         }
