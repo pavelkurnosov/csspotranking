@@ -2725,6 +2725,12 @@ angular.module('app.calendar').controller('CalendarCtrl', function ($scope, $log
 
 });
 
+
+"use strict";
+
+angular.module('app.calendar').factory('CalendarEvent', function($resource, APP_CONFIG){
+    return $resource( APP_CONFIG.apiRootUrl + '/events.json', {_id:'@id'})
+});
 "use strict";
 
 angular.module('app.calendar').directive('dragableEvent', function ($log) {
@@ -2882,12 +2888,6 @@ angular.module('app.calendar').directive('fullCalendar', function (CalendarEvent
             };
         }
     }
-});
-
-"use strict";
-
-angular.module('app.calendar').factory('CalendarEvent', function($resource, APP_CONFIG){
-    return $resource( APP_CONFIG.apiRootUrl + '/events.json', {_id:'@id'})
 });
 "use strict";	
 
