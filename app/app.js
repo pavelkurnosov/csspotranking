@@ -87,6 +87,7 @@ angular.module('app', [
 
 })
 .constant('APP_CONFIG', window.appConfig)
+.constant('ServerURL', 'http://api.spotranking.com/web/v1/site/')
 
 .run(function ($rootScope
     , $state, $stateParams

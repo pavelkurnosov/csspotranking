@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app.biz').controller('AccountCreationController', function ($scope, $window) {
+angular.module('app.biz').controller('AccountCreationController', function (ClientService) {
     var vm = this;
-    vm.a = 32;
+
 });
